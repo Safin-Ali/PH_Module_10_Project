@@ -1,0 +1,113 @@
+/* ---------------------------
+    External Font Import
+---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --------------------------------
+    General Code / Default Code
+--------------------------------- */
+
+body {
+    background: var(--dark-bg);
+    color: var(--light-white);
+}
+
+/* ------------------------------
+        Common Classes
+------------------------------- */
+
+.text-light-white{
+    color: var(--light-white);
+}
+.text-blue-01{
+    color: var(--blue01);
+}
+
+
+/* ------------------------------
+        Value Variables
+------------------------------- */
+
+:root {
+    --light-white: #edf2f4;
+    --dark-bg: #1e2b47;
+    --blue01:#006dff;
+}
+
+
+
+
+/* ------------------------------
+        Top Navbar Drop Area
+------------------------------- */
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--light-white);
+}
+
+.nav-link span{
+    position: relative;
+}
+.navbar-icon-notification {
+    position: absolute;
+    font-size: 13px;
+    background: #ffda4f;
+    padding: 1.5px 3.5px;
+    top: -12px;
+    left: -7px;
+    border-radius: 50%;
+}
+
+
+/* ------------------------------
+    Top Header Slide Content
+------------------------------- */
+
+.top-slider-content h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+.top-slider-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn.course-continue-btn.btn-danger {
+    background: linear-gradient(45deg,
+            #ff35b4,
+            #ff193f);
+    color: #fff;
+    transition: backgro .3s ease-in-out;
+    position: relative;
+    padding: 15px 65px 15px 35px !important;
+}
+
+.btn.course-continue-btn.btn-danger:hover {
+    background: linear-gradient(45deg,
+            #ff193f,
+            #ff35b4);
+    color: #fff;
+}
+
+.course-continue-btn::after {
+    content: "\f061";
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    height: 38px;
+    width: 38px;
+    color: rgb(249, 79, 79);
+    display: block;
+    font-size: 1.4em;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding-top: 3px;
+}
+
+.carousel-item .top-slider-content img{
+    width: 445px;
+    height: 445px;
+}
